@@ -1,65 +1,110 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
-
 <meta charset="UTF-8">
-<title>Inner Growth</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+<title>Inner Olympiad</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#4facfe,#00f2fe);
-height:100vh;
+background:#0f172a;
+color:white;
 display:flex;
 justify-content:center;
 align-items:center;
+height:100vh;
 }
 
-.card{
-background:white;
-padding:50px;
-border-radius:14px;
-box-shadow:0 12px 30px rgba(0,0,0,0.2);
+/* HERO CARD */
+
+.hero{
 text-align:center;
-max-width:600px;
+max-width:700px;
 }
+
+/* TITLE */
 
 h1{
-margin-top:0;
-font-size:36px;
-color:#333;
+font-size:46px;
+margin-bottom:10px;
 }
+
+.subtitle{
+color:#cbd5e1;
+font-size:20px;
+margin-bottom:40px;
+}
+
+/* TORCH */
+
+.torch{
+width:30px;
+height:120px;
+background:#444;
+margin:0 auto;
+border-radius:8px;
+position:relative;
+}
+
+/* FLAME */
+
+.flame{
+position:absolute;
+top:-60px;
+left:50%;
+transform:translateX(-50%);
+width:40px;
+height:60px;
+background:radial-gradient(circle,#ffd54f,#ff6a00);
+border-radius:50%;
+animation:flicker 1.2s infinite;
+}
+
+/* ANIMATION */
+
+@keyframes flicker{
+0%{transform:translateX(-50%) scale(1)}
+25%{transform:translateX(-50%) scale(1.1)}
+50%{transform:translateX(-50%) scale(0.95)}
+75%{transform:translateX(-50%) scale(1.05)}
+100%{transform:translateX(-50%) scale(1)}
+}
+
+/* TEXT */
 
 p{
 font-size:18px;
-color:#555;
+color:#cbd5e1;
 line-height:1.6;
+margin-top:40px;
 }
+
+/* BUTTON */
 
 .button{
 display:inline-block;
-margin-top:25px;
-padding:14px 28px;
-background:#4facfe;
-color:white;
-text-decoration:none;
+margin-top:35px;
+padding:14px 30px;
+background:#f59e0b;
+color:#111;
 border-radius:8px;
+text-decoration:none;
 font-weight:bold;
-transition:0.3s;
 }
 
 .button:hover{
-background:#2f80ed;
+background:#fbbf24;
 }
 
 .footer{
-margin-top:25px;
+margin-top:40px;
 font-size:14px;
-color:#888;
+color:#94a3b8;
 }
 
 </style>
@@ -68,27 +113,38 @@ color:#888;
 
 <body>
 
-<div class="card">
+<div class="hero">
 
-<h1>NOTRANJA OLIMPIJADA</h1>
+<h1>Inner Olympiad</h1>
+
+<div class="subtitle">
+Prižgi notranji plamen discipline
+</div>
+
+<div class="torch">
+<div class="flame"></div>
+</div>
 
 <p>
-Vabljen si, da se pridružiš eksperimentu osebne rasti.
+Vsaka olimpijada se začne z ognjem.
 </p>
 
 <p>
-Inner Olympiad je prostor za ljudi,
-ki želijo razvijati disciplino,
-jasnost misli in notranjo moč.
+Ta ni na stadionu — ampak v tebi.
 </p>
 
-<a class="button" href="#">Pridruži se</a>
+<a class="button" href="#">
+Pridruži se izzivu
+</a>
 
 <div class="footer">
-Inner Natural Growth Project
+Natural Growth Project
 </div>
 
 </div>
 
 </body>
 </html>
+
+
+
