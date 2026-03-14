@@ -1,116 +1,181 @@
-```html
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Inner Olympiad</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
+
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0e0e0e;
-    color:#ffffff;
-    line-height:1.6;
+margin:0;
+font-family:'Inter', sans-serif;
+background:#0c0c0c;
+color:#ffffff;
+line-height:1.6;
 }
 
-header{
-    text-align:center;
-    padding:100px 20px;
-    background:#111;
+h1,h2,h3{
+font-family:'Playfair Display', serif;
 }
 
-h1{
-    font-size:48px;
-    letter-spacing:3px;
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
 }
 
-h2{
-    font-size:32px;
-    margin-bottom:20px;
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:radial-gradient(circle at top,#1c1c1c,#000);
+}
+
+.hero h1{
+font-size:60px;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#bbb;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 40px;
+background:linear-gradient(135deg,#e5c46b,#caa73a);
+color:#000;
+font-weight:600;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 
 section{
-    padding:80px 20px;
-    max-width:900px;
-    margin:auto;
+padding:90px 0;
 }
 
-button{
-    background:#d4af37;
-    color:black;
-    border:none;
-    padding:15px 30px;
-    font-size:16px;
-    cursor:pointer;
-    margin-top:20px;
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:36px;
+}
+
+.section-title p{
+color:#aaa;
 }
 
 .disciplines{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 }
 
 .card{
-    background:#1b1b1b;
-    padding:20px;
-    border-radius:8px;
+background:#161616;
+padding:30px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+background:#1e1e1e;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.challenge{
+text-align:center;
+background:linear-gradient(180deg,#111,#050505);
+border-radius:15px;
+padding:60px 30px;
+}
+
+.challenge ul{
+list-style:none;
+padding:0;
+}
+
+.challenge li{
+margin:10px 0;
+color:#ccc;
+}
+
+.manifest{
+max-width:700px;
+margin:auto;
+text-align:center;
+font-size:18px;
+color:#ddd;
 }
 
 footer{
-    text-align:center;
-    padding:40px;
-    background:#111;
+text-align:center;
+padding:40px;
+border-top:1px solid #222;
+color:#777;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-<header>
+<section class="hero">
+<div class="container">
+
 <h1>INNER OLYMPIAD</h1>
-<p><strong>Your Only Competition Is Your Yesterday</strong></p>
+
+<p>Your Only Competition Is Your Yesterday</p>
+
 <p>The arena for personal and business growth.</p>
 
-<button>Enter the Arena</button>
-</header>
+<a href="#" class="button">Enter the Arena</a>
 
-
-<section>
-<h2>Life Is the Greatest Arena</h2>
-
-<p>
-Most people compete with others.
-But real growth begins when you compete with yourself.
-</p>
-
-<p>
-Inner Olympiad is a system for training the disciplines of life —
-mind, work, wealth and purpose.
-</p>
-
-<p>
-Here, your only competition is who you were yesterday.
-</p>
+</div>
 </section>
 
 
 <section>
-<h2>The 10 Disciplines</h2>
+
+<div class="container">
+
+<div class="section-title">
+<h2>The Disciplines of Life</h2>
+<p>Train the abilities that shape your future.</p>
+</div>
 
 <div class="disciplines">
 
 <div class="card">
 <h3>Focus</h3>
-<p>Develop mental clarity and deep concentration.</p>
+<p>Develop deep concentration and mental clarity.</p>
 </div>
 
 <div class="card">
 <h3>Learning</h3>
-<p>Expand your knowledge and understanding.</p>
+<p>Expand knowledge and understanding continuously.</p>
 </div>
 
 <div class="card">
@@ -120,7 +185,7 @@ Here, your only competition is who you were yesterday.
 
 <div class="card">
 <h3>Entrepreneurship</h3>
-<p>Create projects, value and opportunities.</p>
+<p>Create ideas, projects and opportunities.</p>
 </div>
 
 <div class="card">
@@ -150,7 +215,9 @@ Here, your only competition is who you were yesterday.
 
 <div class="card">
 <h3>Purpose</h3>
-<p>Define your direction and meaningful goals.</p>
+<p>Define direction and meaningful goals.</p>
+</div>
+
 </div>
 
 </div>
@@ -159,11 +226,14 @@ Here, your only competition is who you were yesterday.
 
 
 <section>
+
+<div class="container">
+
+<div class="challenge">
+
 <h2>30-Day Inner Olympiad Challenge</h2>
 
-<p>
-Train your discipline, focus and growth for 30 days.
-</p>
+<p>Train your discipline, focus and growth for 30 days.</p>
 
 <ul>
 <li>Daily challenges</li>
@@ -171,41 +241,61 @@ Train your discipline, focus and growth for 30 days.
 <li>Weekly reflection</li>
 </ul>
 
-<button>Start the Challenge</button>
+<a href="#" class="button">Start the Challenge</a>
+
+</div>
+
+</div>
 
 </section>
 
 
 <section>
+
+<div class="container">
+
+<div class="section-title">
 <h2>The Manifest</h2>
+</div>
+
+<div class="manifest">
 
 <p>
 We live in a world obsessed with comparison.
 But the greatest arena is not outside.
+</p>
+
+<p>
 It is within.
 </p>
 
 <p>
-Inner Olympiad is for those who choose growth without comparison,
-discipline without pressure and progress without limits.
+Inner Olympiad exists for those who choose growth without comparison
+and discipline without pressure.
 </p>
 
 <p>
 Welcome to the arena.
 </p>
 
+</div>
+
+</div>
+
 </section>
 
 
 <section>
+
+<div class="container" style="text-align:center">
+
 <h2>Join the Inner Olympians</h2>
 
-<p>
-Connect with people who are training their lives.
-Share progress, challenges and victories.
-</p>
+<p>Connect with people who are training their lives.</p>
 
-<button>Join the Community</button>
+<a href="#" class="button">Join the Community</a>
+
+</div>
 
 </section>
 
@@ -216,7 +306,8 @@ Share progress, challenges and victories.
 
 </body>
 </html>
-```
+
+
 
 
 
