@@ -1,151 +1,222 @@
+```html
 <!DOCTYPE html>
-<html lang="sl">
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>Inner Growth</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inner Olympiad</title>
 
 <style>
-
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#0f172a;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0e0e0e;
+    color:#ffffff;
+    line-height:1.6;
 }
 
-/* HERO CARD */
-
-.hero{
-text-align:center;
-max-width:700px;
+header{
+    text-align:center;
+    padding:100px 20px;
+    background:#111;
 }
-
-/* TITLE */
 
 h1{
-font-size:46px;
-margin-bottom:10px;
+    font-size:48px;
+    letter-spacing:3px;
 }
 
-.subtitle{
-color:#cbd5e1;
-font-size:20px;
-margin-bottom:40px;
+h2{
+    font-size:32px;
+    margin-bottom:20px;
 }
 
-/* TORCH */
-
-.torch{
-width:30px;
-height:120px;
-background:#444;
-margin:0 auto;
-border-radius:8px;
-position:relative;
+section{
+    padding:80px 20px;
+    max-width:900px;
+    margin:auto;
 }
 
-
-  /* FLAME */
-
-.flame{
-position:absolute;
-top:-65px;
-left:50%;
-transform:translateX(-50%);
-width:40px;
-height:60px;
-background:radial-gradient(circle,#ffd54f,#ff6a00);
-border-radius:50%;
-animation:flicker 1.2s infinite;
+button{
+    background:#d4af37;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:20px;
 }
 
-/* ANIMATION */
-
-@keyframes flicker{
-0%{transform:translateX(-50%) scale(1)}
-25%{transform:translateX(-50%) scale(1.1)}
-50%{transform:translateX(-50%) scale(0.95)}
-75%{transform:translateX(-50%) scale(1.05)}
-100%{transform:translateX(-50%) scale(1)}
+.disciplines{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
 }
 
-/* TEXT */
-
-p{
-font-size:18px;
-color:#cbd5e1;
-line-height:1.6;
-margin-top:40px;
+.card{
+    background:#1b1b1b;
+    padding:20px;
+    border-radius:8px;
 }
 
-/* BUTTON */
-
-.button{
-display:inline-block;
-margin-top:35px;
-padding:14px 30px;
-background:#f59e0b;
-color:#111;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+footer{
+    text-align:center;
+    padding:40px;
+    background:#111;
 }
-
-.button:hover{
-background:#fbbf24;
-}
-
-.footer{
-margin-top:40px;
-font-size:14px;
-color:#94a3b8;
-}
-
 </style>
 
 </head>
 
 <body>
 
-<div class="hero">
+<header>
+<h1>INNER OLYMPIAD</h1>
+<p><strong>Your Only Competition Is Your Yesterday</strong></p>
+<p>The arena for personal and business growth.</p>
 
-<h1>Inner Olympiad</h1>
+<button>Enter the Arena</button>
+</header>
 
-<div class="subtitle">
-Prižgi notranji plamen discipline
-</div>
 
-<div class="torch">
-<div class="flame"></div>
-</div>
+<section>
+<h2>Life Is the Greatest Arena</h2>
 
 <p>
-Vsaka olimpijada se začne z ognjem.
+Most people compete with others.
+But real growth begins when you compete with yourself.
 </p>
 
 <p>
-Ta ni na stadionu — ampak v tebi.
+Inner Olympiad is a system for training the disciplines of life —
+mind, work, wealth and purpose.
 </p>
 
-<a class="button" href="#">
-Pridruži se izzivu
-</a>
+<p>
+Here, your only competition is who you were yesterday.
+</p>
+</section>
 
-<div class="footer">
-Natural Growth Project
+
+<section>
+<h2>The 10 Disciplines</h2>
+
+<div class="disciplines">
+
+<div class="card">
+<h3>Focus</h3>
+<p>Develop mental clarity and deep concentration.</p>
+</div>
+
+<div class="card">
+<h3>Learning</h3>
+<p>Expand your knowledge and understanding.</p>
+</div>
+
+<div class="card">
+<h3>Wealth</h3>
+<p>Build financial intelligence and stability.</p>
+</div>
+
+<div class="card">
+<h3>Entrepreneurship</h3>
+<p>Create projects, value and opportunities.</p>
+</div>
+
+<div class="card">
+<h3>Productivity</h3>
+<p>Master time, priorities and execution.</p>
+</div>
+
+<div class="card">
+<h3>Strategy</h3>
+<p>Think long-term and make better decisions.</p>
+</div>
+
+<div class="card">
+<h3>Communication</h3>
+<p>Express ideas clearly and influence others.</p>
+</div>
+
+<div class="card">
+<h3>Leadership</h3>
+<p>Guide people and take responsibility.</p>
+</div>
+
+<div class="card">
+<h3>Energy</h3>
+<p>Maintain physical and mental vitality.</p>
+</div>
+
+<div class="card">
+<h3>Purpose</h3>
+<p>Define your direction and meaningful goals.</p>
 </div>
 
 </div>
+
+</section>
+
+
+<section>
+<h2>30-Day Inner Olympiad Challenge</h2>
+
+<p>
+Train your discipline, focus and growth for 30 days.
+</p>
+
+<ul>
+<li>Daily challenges</li>
+<li>Progress tracking</li>
+<li>Weekly reflection</li>
+</ul>
+
+<button>Start the Challenge</button>
+
+</section>
+
+
+<section>
+<h2>The Manifest</h2>
+
+<p>
+We live in a world obsessed with comparison.
+But the greatest arena is not outside.
+It is within.
+</p>
+
+<p>
+Inner Olympiad is for those who choose growth without comparison,
+discipline without pressure and progress without limits.
+</p>
+
+<p>
+Welcome to the arena.
+</p>
+
+</section>
+
+
+<section>
+<h2>Join the Inner Olympians</h2>
+
+<p>
+Connect with people who are training their lives.
+Share progress, challenges and victories.
+</p>
+
+<button>Join the Community</button>
+
+</section>
+
+
+<footer>
+<p>© 2026 Inner Olympiad</p>
+</footer>
 
 </body>
 </html>
+```
 
 
 
